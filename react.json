@@ -1,0 +1,66 @@
+{
+    "extends": [
+        "./babel.json"
+    ],
+    "plugins": [
+        "react"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "globals": {
+        "React": false,
+        "ReactDOM": false
+    },
+    "rules": {
+        "react/display-name": 0,
+        "react/jsx-boolean-value": [2, "never"],
+        "react/jsx-closing-bracket-location": [2, "line-aligned"],
+        "react/jsx-curly-spacing": 0,
+        "react/jsx-indent-props": [2, 4],
+        "react/jsx-no-duplicate-props": 0,
+        "react/jsx-no-undef": 2,
+        "jsx-quotes": [2, "prefer-double"],
+        "react/jsx-sort-prop-types": 0,
+        "react/jsx-sort-props": 0,
+        "react/jsx-uses-react": 2,
+        "react/jsx-uses-vars": 2,
+        "react/no-danger": 0,
+        "react/no-did-mount-set-state": [2, "allow-in-func"],
+        "react/no-did-update-set-state": [2, "allow-in-func"],
+        "react/no-multi-comp": [0, {
+            "ignoreStateless": true
+        }],
+        "react/no-unknown-property": 2,
+        "react/prop-types": 1,
+        "react/react-in-jsx-scope": 2,
+        "react/require-extension": 0,
+        "react/self-closing-comp": 2,
+        "react/sort-comp": [1, {
+            "order": [
+                "lifecycle",
+                "events-props",
+                "everything-else",
+                "rendering"
+            ],
+            "groups": {
+                "events-props": [
+                    "/^on.+$/",
+                    "/^handle.+$/",
+                    "/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/"
+                ],
+                "rendering": [
+                    "/^render.+$/",
+                    "render"
+                ]
+            }
+        }],
+        "react/wrap-multilines": [2, {
+            "declaration": true,
+            "assignment": true,
+            "return": true
+        }]
+    }
+}

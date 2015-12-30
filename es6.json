@@ -1,0 +1,31 @@
+{
+    "extends": [
+        "./legacy.json"
+    ],
+    "env": {
+        "es6": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 6
+    },
+    "rules": {
+        "arrow-parens": 1,
+        "arrow-spacing": [2, {
+            "before": true,
+            "after": true
+        }],
+        "constructor-super": 0,
+        "generator-star-spacing": 1,
+        "no-class-assign": 0,
+        "no-const-assign": 2,
+        "no-this-before-super": 0,
+        "no-var": 1,
+        "object-curly-spacing": [2, "always"],
+        "object-shorthand": [1, "methods"],
+        "prefer-const": 0,
+        "prefer-spread": 0,
+        "prefer-reflect": 0,
+        "require-yield": 0,
+        "strict": [1, "never"]
+    }
+}

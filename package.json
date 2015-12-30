@@ -1,0 +1,48 @@
+{
+    "name": "eslint-config-forio",
+    "version": "1.0.0",
+    "description": "Forio's ESLint config",
+    "main": "react.json",
+    "scripts": {
+        "lint": "eslint ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/forio/front-end-code-standards/dotfiles/eslint-config-forio"
+    },
+    "keywords": [
+        "eslint",
+        "eslintconfig",
+        "config",
+        "forio",
+        "javascript",
+        "styleguide"
+    ],
+    "author": "David Rosen (drosen@forio.com)",
+    "contributors": [
+        {
+            "name": "David Rosen",
+            "email": "drosen@forio.com",
+            "url": "https://forio.com"
+        },
+        {
+            "name": "Naren Ranjit",
+            "email": "nranjit@forio.com",
+            "url": "https://forio.com"
+        }
+    ],
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/forio/front-end-code-standards/issues"
+    },
+    "homepage": "https://github.com/forio/front-end-code-standards",
+    "devDependencies": {
+        "eslint": "^1.10.3",
+        "eslint-plugin-babel": "^3.0.0",
+        "eslint-plugin-react": "^3.12.0",
+        "react": "^0.14.3"
+    },
+    "peerDependencies": {
+        "eslint": ">=1.10.3"
+    }
+}
