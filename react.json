@@ -10,10 +10,6 @@
             "jsx": true
         }
     },
-    "globals": {
-        "React": false,
-        "ReactDOM": false
-    },
     "rules": {
         "react/display-name": 0,
         "react/jsx-boolean-value": [2, "never"],
