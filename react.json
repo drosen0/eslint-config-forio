@@ -42,14 +42,23 @@
                 "rendering"
             ],
             "groups": {
+                "lifecycle": [
+                    "/^(displayName|propTypes|contextTypes|childContextTypes|mixins|statics|defaultProps|state)$/",
+                    "constructor",
+                    "/^(getDefaultProps|getInitialState|getChildContext)$/",
+                    "componentWillMount",
+                    "componentDidMount",
+                    "componentWillReceiveProps",
+                    "shouldComponentUpdate",
+                    "componentWillUpdate",
+                    "componentDidUpdate",
+                    "componentWillUnmount"
+                ],
                 "events-props": [
-                    "/^on.+$/",
-                    "/^handle.+$/",
-                    "/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/"
+                    "/^(on|handle|(get|set)(?!(InitialState$|DefaultProps$|ChildContext$))).+$/"
                 ],
                 "rendering": [
-                    "/^render.+$/",
-                    "render"
+                    "/^render.*$/"
                 ]
             }
         }],
