@@ -9,12 +9,12 @@
         "ecmaVersion": 6
     },
     "rules": {
-        "arrow-parens": 1,
+        "arrow-parens": 2,
         "arrow-spacing": [2, {
             "before": true,
             "after": true
         }],
-        "constructor-super": 0,
+        "constructor-super": 2,
         "generator-star-spacing": 1,
         "no-class-assign": 0,
         "no-const-assign": 2,
